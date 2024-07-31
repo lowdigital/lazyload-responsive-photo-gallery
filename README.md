@@ -102,4 +102,4 @@ Feel free to fork the project, create a branch, make your changes, and submit a 
 
 ## Author
 
-- **Your Name** - [@lowdigital](https://t.me/low_digital)
+[@lowdigital](https://t.me/low_digital)

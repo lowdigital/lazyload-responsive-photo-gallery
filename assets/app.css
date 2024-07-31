@@ -1,0 +1,127 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f0f0f0;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+.gallery-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 1200px;
+	padding: 20px;
+	background-color: #f0f0f0;
+}
+
+.gallery-item {
+	width: calc(33.333% - 10px);
+	margin-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 10px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item::before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+	/* Обеспечивает квадратный контейнер */
+}
+
+.gallery-item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border-radius: 10px;
+	/* Закругленные углы для изображений */
+}
+
+.gallery-item:hover img {
+	/* transform: scale(1.1); */
+}
+
+.gallery-item {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item {
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.4);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.4);
+	box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.4);
+	/* Обводка при наведении */
+}
+
+.gallery-item:hover {
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.8);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.8);
+	box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.8);
+	/* Обводка при наведении */
+}
+
+.gallery-item a,
+.gallery-item img,
+.gallery-item {
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+@media (max-width: 1200px) {
+	.gallery-container {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.gallery-item {
+		width: calc(33.333% - 6px);
+	}
+}
+
+@media (max-width: 768px) {
+	.gallery-item {
+		width: calc(50% - 6px);
+	}
+}
+
+@media (max-width: 480px) {
+	.gallery-item {
+		width: 100%;
+	}
+}
+
+.fancybox__content img {
+	border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+	.fancybox__nav {
+		display: none;
+	}
+}
+
+.gallery-item {
+	display: none;
+}
+
+.gallery-item.visible {
+	display: block;
+}

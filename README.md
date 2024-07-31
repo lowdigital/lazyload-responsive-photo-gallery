@@ -3,6 +3,8 @@
 
 This repository provides a minimalist, responsive photo gallery with lazy loading. It is designed to handle a large number of images efficiently, ensuring fast load times for users while remaining search engine friendly despite the use of lazy loading.
 
+Demo: [https://lowdigital.github.io/lazyload-responsive-photo-gallery/](https://lowdigital.github.io/lazyload-responsive-photo-gallery/)
+
 ## Features
 
 - **Responsive Design**: Adapts to different screen sizes, ensuring a good user experience on both desktop and mobile devices.

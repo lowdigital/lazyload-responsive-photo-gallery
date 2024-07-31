@@ -27,7 +27,7 @@ This repository provides a minimalist, responsive photo gallery with lazy loadin
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/lowdigital/lazyload-responsive-photo-gallery.git
-   cd yourrepository
+   cd lazyload-responsive-photo-gallery
    ```
 
 2. **Ensure you have PHP installed**.

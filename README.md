@@ -15,6 +15,7 @@ Demo: [https://lowdigital.github.io/lazyload-responsive-photo-gallery/](https://
 
 ## Folder Structure
 
+- **index.html**: Demo page (used only for GitHub Pages).
 - **index.php**: Main file that sets up the photo gallery.
 - **data.html**: Contains the gallery items (links to images with necessary attributes).
 - **assets/**: Contains CSS and JS files.
